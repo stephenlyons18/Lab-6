@@ -24,7 +24,7 @@ public class FlyingDragon extends Dragon {
 	}
 
 	public int attack() {
-		randomAttack = rand.nextInt(1);
+		int randomAttack = rand.nextInt(1);
 		if (randomAttack == 0) {
 			return swoopAttack();
 		} else {

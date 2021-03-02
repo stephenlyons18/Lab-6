@@ -9,8 +9,8 @@ class Main {
 
 		//create dragons
 		Dragon dragon1 = new Dragon("Deadly Nadder", 10);
-		FireDragon dragon2 = new FireDragon("Gronckle", 15);
-		FlyingDragon dragon3 = new FlyingDragon("Timberjack", 20);
+		Dragon dragon2 = new FireDragon("Gronckle", 15);
+		Dragon dragon3 = new FlyingDragon("Timberjack", 20);
 
 		System.out.println(dragon1.toString());
 
