@@ -4,8 +4,8 @@ public class FlyingDragon extends Dragon {
 	private int swoops = 5;
 	private Random rand = new Random();
 
-	public FlyingDragon() {
-		super();
+	public FlyingDragon(String name, int hp) {
+		super(name, hp);
 	}
 
 	public int swoopAttack() {
@@ -18,7 +18,7 @@ public class FlyingDragon extends Dragon {
 	}
 
 	public String toString() {
-		System.out.println("Swoop Attacks remaining: " + fireBalls);
+		System.out.println("Swoop Attacks remaining: " + swoops);
 		return super.toString();
 
 	}

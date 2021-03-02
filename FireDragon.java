@@ -4,8 +4,8 @@ public class FireDragon extends Dragon {
 	private int fireBalls = 5;
 	private Random rand = new Random();
 
-	public FireDragon() {
-		super();
+	public FireDragon(String name, int hp) {
+		super(name, hp);
 	}
 
 	public int fireShot() {

@@ -12,13 +12,20 @@ class Main {
 		Dragon dragon2 = new FireDragon("Gronckle", 15);
 		Dragon dragon3 = new FlyingDragon("Timberjack", 20);
 
-		System.out.println(dragon1.toString());
+		System.out.println(dragon3.toString());
 
 		while (hp > 0) {
 
-			System.out.println(name);
+			
 			// create dragons
 
 		}
 	}
+	public void dragonMenu(){
+		System.out.println("");
+		
+	}
+	public void attackMenu(){
+
+	} 
 }
