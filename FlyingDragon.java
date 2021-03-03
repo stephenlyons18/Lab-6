@@ -9,6 +9,7 @@ public class FlyingDragon extends Dragon {
 	}
 
 	public int swoopAttack() {
+		System.out.println(super.getName() + " swoops down and knocks you over");
 		if (swoops > 0) {
 			swoops -= 1;
 			return rand.nextInt(5) + 5;
@@ -18,7 +19,7 @@ public class FlyingDragon extends Dragon {
 	}
 
 	public String toString() {
-		System.out.println("Swoop Attacks remaining: " + swoops);
+		System.out.println("\n" + "Swoop Attacks remaining: " + swoops);
 		return super.toString();
 
 	}

@@ -14,6 +14,7 @@ public class Dragon {
 	}
 
 	public int attack() {
+		System.out.println(name + " smashes you with its tail");
 		return rand.nextInt(4) + 3;
 	}
 
@@ -23,6 +24,9 @@ public class Dragon {
 
 	public int getHP() {
 		return hp;
+	}
+	public String getName(){
+		return name;
 	}
 
 	@Override

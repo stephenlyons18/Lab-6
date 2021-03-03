@@ -3,12 +3,13 @@ import java.util.Random;
 public class FireDragon extends Dragon {
 	private int fireBalls = 5;
 	private Random rand = new Random();
-
+	
 	public FireDragon(String name, int hp) {
 		super(name, hp);
 	}
 
 	public int fireShot() {
+		System.out.println(super.getName() + " spews fire at you");
 		if (fireBalls > 0) {
 			fireBalls -= 1;
 			return rand.nextInt(4) + 5;
@@ -18,7 +19,7 @@ public class FireDragon extends Dragon {
 	}
 
 	public String toString() {
-		System.out.println("Fire shots remaining: " + fireBalls);
+		System.out.println("\n" +"Fire shots remaining: " + fireBalls);
 		return super.toString();
 	}
 
